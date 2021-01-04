@@ -1,0 +1,35 @@
+.credit {
+  font-size: 10px;
+}
+
+.head {
+  font-size: 18px;
+}
+
+.nasynth {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+body {
+  text-align: center;
+}
+
+mat-dialog-container {
+  padding-bottom: 8px;
+}
+
+.globe-logo {
+  height: 125px;
+}
+.link {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+@media only screen and (max-width: 1080px) {
+  body {
+    overflow: auto;
+    max-height: 95vh;
+  }
+}

@@ -1,0 +1,293 @@
+body {
+  max-height: 100%;
+}
+
+.main-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.image-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  z-index: 99;
+  width: 75%;
+  position: absolute;
+  align-content: stretch;
+  align-items: center;
+  top: 0;
+  padding-top: 10px;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.37);
+  transition: 1s all;
+}
+
+.nav-button:hover {
+  color: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
+  /* fill: rgba(255, 255, 255, 0.75); */
+  /* transition: 1s all; */
+}
+
+.nasa-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  filter: blur(8px);
+  -webkit-filter: blur(6px);
+}
+
+.nasa-overlay-img {
+  position: absolute;
+  width: auto;
+  height: 99%;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.fas {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.random-button {
+  z-index: 99;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s all;
+}
+
+.nav-button:hover {
+  fill: rgba(255, 255, 255, 0.75);
+}
+
+.mat-button {
+  line-height: 25px;
+}
+
+.bottom {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  transform: rotate(90deg);
+  left: 50%;
+  right: 50%;
+}
+
+.panel {
+  z-index: 4;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.055);
+  transition: all 1s;
+}
+
+.mat-expansion-panel-header-description {
+  color: white;
+  justify-content: flex-end;
+}
+
+.panel:hover {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.about-button {
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
+
+.text {
+  width: 15%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(128, 128, 128, 0.199);
+  position: absolute;
+  z-index: 3;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nasynth-text {
+  height: 25px;
+}
+
+.title-text {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.pos1 {
+  top: 15%;
+  left: 7%;
+}
+
+.pos2 {
+  top: 15%;
+  left: 30%;
+}
+
+.pos3 {
+  top: 15%;
+  left: 60%;
+}
+
+.pos4 {
+  top: 15%;
+  left: 75%;
+}
+
+.pos5 {
+  top: 35%;
+  left: 7%;
+}
+
+.pos6 {
+  top: 35%;
+  left: 30%;
+}
+
+.pos7 {
+  top: 35%;
+  left: 60%;
+}
+
+.pos8 {
+  top: 35%;
+  left: 75%;
+}
+
+.pos9 {
+  top: 55%;
+  left: 7%;
+}
+
+.pos10 {
+  top: 55%;
+  left: 30%;
+}
+
+.pos11 {
+  top: 55%;
+  left: 75%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .image-container {
+    overflow: auto;
+    max-height: 100%;
+  }
+  .about-button {
+    font-size: 14px;
+  }
+  .nasa-overlay-img {
+    height: 100%;
+  }
+  .image-container {
+    max-height: 100%;
+  }
+
+  .text {
+    width: 95vw;
+  }
+
+  .header {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .pos1,
+  .pos2,
+  .pos3,
+  .pos4,
+  .pos5,
+  .pos6,
+  .pos7,
+  .pos8,
+  .pos9,
+  .pos10,
+  .pos11 {
+    position: fixed;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .panel {
+    max-height: 90vh;
+    overflow: auto;
+    z-index: 100;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .image-container {
+    max-height: 100%;
+  }
+
+  .panel-header {
+    position: sticky;
+  }
+
+  .nasa-overlay-img {
+    height: 100%;
+  }
+
+  .text {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  .title-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  .pos1,
+  .pos2,
+  .pos3,
+  .pos4,
+  .pos5,
+  .pos6,
+  .pos7,
+  .pos8,
+  .pos9,
+  .pos10,
+  .pos11 {
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+  }
+}
